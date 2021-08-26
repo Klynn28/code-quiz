@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,32 +12,37 @@
 <body>
     <header>
         <div>
-            <h3 href="highscores.html">High Scores</h3>
-        </div>
-        <div>
-            <p id="timer"></p>
+            <h3>Timer</h3>
+            <p id="seconds">90</p>
         </div>
     </header>
 
     <main>
-
-        <div id="start">
+        <div class="container">
             <h1>Coding Quiz</h1>
-            <button id="timer"></button>
-        </div>
-        <div>
-            <h2 id="Question"></h2>
-            <ul id="answer"></ul>
-            <p id="scores"></p>
-            <p id="results"></p>
-            <form>
-                <input type="text" placeholder="Initals"/>
-                <button id="submit">Submit</button>
-            </form>
-            <button id="redo">Redo Quiz</button>
+            <section id="start"></section>
+            <div id="questions" class="hidden"></div>
+            <button id="start" class="buttons">Start</button>
+            <button id="next" class="buttons">Next</button>
+            </section>
+            <section>
+                <h2 id="Question"></h2>
+                <ul id="answer"></ul>
+                <p id="scores"></p>
+                <p id="results"></p>
+                <form>
+                    <input type="text" placeholder="Initals" />
+                    <button id="submit">Submit</button>
+                </form>
+                <button id="redo">Redo Quiz</button>
+            </section>
+            <div>
+                <p href="highscores.html">High Scores</p>
+            </div>
         </div>
     </main>
     <script src="script.js"></script>
+
 </body>
 
 </html>
