@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5),
+    rgba(255, 255, 0, 0.5));
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    width: 800px;
+    max-width: 80%;
+    background-color: cornsilk;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 15px 4px;
+    
+}

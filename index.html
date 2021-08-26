@@ -11,6 +11,7 @@
 
 <body>
     <header>
+        <h1>Coding Quiz</h1>
         <div>
             <h3>Timer</h3>
             <p id="seconds">90</p>
@@ -18,18 +19,19 @@
     </header>
 
     <main>
-        <div class="container">
-            <h1>Coding Quiz</h1>
-            <section id="start"></section>
-            <div id="questions" class="hidden"></div>
-            <button id="start" class="buttons">Start</button>
-            <button id="next" class="buttons">Next</button>
-            </section>
+        <div class="main">
+            <div id="container" class="hidden">
+                <h3 id="questions">Questions</h3>
+                <div id="answer" class="options">
+                    <button class="button">Answer 1</button>
+                    <button class="button">Answer 2</button>
+                    <button class="button">Answer 3</button>
+                    <button class="button">Answer 4</button>
+                </div>
+            </div>
+            <button id="start" class="btn">Start</button>
+            <button id="next" class="btn hidden">Next</button>
             <section>
-                <h2 id="Question"></h2>
-                <ul id="answer"></ul>
-                <p id="scores"></p>
-                <p id="results"></p>
                 <form>
                     <input type="text" placeholder="Initals" />
                     <button id="submit">Submit</button>
