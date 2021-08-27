@@ -12,27 +12,31 @@
 <body>
     <header>
         <h1>Coding Quiz</h1>
-        <div class = "time">
+        <div class="time">
             <h3>Timer</h3>
             <p id="seconds">90</p>
         </div>
     </header>
 
+    <button class="start" id="start">Start</button>
     <main>
         <div class="main" id="starting">
             <div id="container" class="hidden">
-                <h3 id="questions">Questions</h3>
-                <div id="answer" class="options">
-                    <button class="button">Answer 1</button>
-                    <button class="button">Answer 2</button>
-                    <button class="button">Answer 3</button>
-                    <button class="button">Answer 4</button>
+                <div id="questions">
+                    <h3>Questions</h3>
+                    <div id="answer" class="options">
+                        <button class="button">Answer 1</button>
+                        <button class="button">Answer 2</button>
+                        <button class="button">Answer 3</button>
+                        <button class="button">Answer 4</button>
+                    </div>
                 </div>
-                <button class="start">Start</button>
-                <button class="next hidden">Next</button>
-            </div>     
+            </div>
         </div>
         <section>
+            <div class=padding>
+                <button class="next hidden" id="next">Next</button>
+            </div>
             <form>
                 <input type="text" placeholder="Initals" />
                 <button id="submit" class="button">Submit</button>
