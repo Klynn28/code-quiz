@@ -9,3 +9,5 @@ A quiz that is timed and gives multiple choice answers, an input sections to add
 [Link to LIVE site](https://klynn28.github.io/code-quiz/)
 
 ## Screenshots
+
+![code-quiz](Assets/screenshot.png)
