@@ -7,8 +7,10 @@ var endEl = document.querySelector("#end");
 var mainEl = document.querySelector("#starting");
 var questionEl = document.querySelector("#questions");
 var answersEl = document.querySelector("#answers");
+var correctAns = document.querySelector("#correct")
 
-var timeLeft = 3;
+var timeLeft = 60;
+var nextQuestion = 0;
 
 startEl.style.display = "none";
 nextEl.style.display = "none";
@@ -65,6 +67,7 @@ var quiz = function () {
     btnEl.textContent = (questions[0].answers[i]);
     answersEl.appendChild(btnEl);
     }
+
 };
 
 var end = function () {
@@ -74,10 +77,6 @@ var end = function () {
     mainEl.style.display = "block";
     endEl.style.display = "block";
 }
-
-
-
-
 
 startButton.addEventListener("click", function () {
     timer();
